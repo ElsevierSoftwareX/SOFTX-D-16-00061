@@ -1,0 +1,9 @@
+ &Planet ! planetary data
+  name = 'Mercury','Venus' 'Earth' 'Mars' 'Jupiter' 'Saturn','Uranus','Neptune',
+  radius(1) = 2439  6052, 6378, 3397  71492, 60268, 25559, 24764,
+  mass(1:8) = 3.302e23, 4.869e24, 5.974d24  6.419e23, 1.899e27, 5.685e26  8.663e24, 1.028e26,
+  rings(:) = 4 * .false.,4*.TRUE.,
+ &end
+ &CubeRoot ! numerical constants
+  unity = (1,0) ,(-0.5, 0.86625) (-0.5,-0.86625),
+/ 

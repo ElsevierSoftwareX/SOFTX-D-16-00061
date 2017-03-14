@@ -1,0 +1,95 @@
+
+<namelist>
+  <group name="Planet">
+    <groupSummary>Physical data</groupSummary>
+    <groupDetail>Seidelmann PK, editor. Explanatory Supplement to the Astronomical Almanac, Mill Valley: University Science Books; 1992, p.706-707. </groupDetail>
+    <comment>"! planetary data"</comment>
+    <object name="name">
+      <objectSummary>Planet name</objectSummary>
+      <objectDetail>object detail</objectDetail>
+      <numberOfElements>8</numberOfElements>
+      <dataType>character</dataType>
+      <dataSize>9</dataSize>
+      <unit>unit</unit>
+      <value type="character">'Mercury'</value>
+      <value type="character">'Venus'</value>
+      <value type="character">'Earth'</value>
+      <value type="character">'Mars'</value>
+      <value type="character">'Jupiter'</value>
+      <value type="character">'Saturn'</value>
+      <value type="character">'Uranus'</value>
+      <value type="character">'Neptune'</value>
+    </object>
+    <object name="radius" index="(1)">
+      <objectSummary>Planet radius (equ.)</objectSummary>
+      <objectDetail>The mean equatorial radii are given.</objectDetail>
+      <numberOfElements>8</numberOfElements>
+      <dataType>integer</dataType>
+      <dataSize>4</dataSize>
+      <unit>km</unit>
+      <value type="integer">2439</value>
+      <value type="integer">6052</value>
+      <value type="integer">6378</value>
+      <value type="integer">3397</value>
+      <value type="integer">71492</value>
+      <value type="integer">60268</value>
+      <value type="integer">25559</value>
+      <value type="integer">24764</value>
+    </object>
+    <object name="mass" index="(1:8)">
+      <objectSummary>Planet mass</objectSummary>
+      <objectDetail>The values for the masses include the atmospheres but exclude satellites.</objectDetail>
+      <numberOfElements>8</numberOfElements>
+      <dataType>real</dataType>
+      <dataSize>8</dataSize>
+      <unit>kg</unit>
+      <value type="real">3.302e23</value>
+      <value type="real">4.869e24</value>
+      <value type="real">5.974d24</value>
+      <value type="real">6.419e23</value>
+      <value type="real">1.899e27</value>
+      <value type="real">5.685e26</value>
+      <value type="real">8.663e24</value>
+      <value type="real">1.028e26</value>
+    </object>
+    <object name="rings" index="(:)">
+      <objectSummary>Flag for rings</objectSummary>
+      <objectDetail>True, if rings exist.</objectDetail>
+      <numberOfElements>8</numberOfElements>
+      <dataType>logical</dataType>
+      <dataSize>4</dataSize>
+      <unit>unit</unit>
+      <repeat times="4">
+        <value type="logical">.false.</value>
+      </repeat>
+      <repeat times="4">
+        <value type="logical">.TRUE.</value>
+      </repeat>
+    </object>
+  </group>
+  <group name="CubeRoot">
+    <groupSummary>group summary</groupSummary>
+    <groupDetail>group detail</groupDetail>
+    <comment>"! numerical constants"</comment>
+    <object name="unity">
+      <objectSummary>object summary</objectSummary>
+      <objectDetail>object detail</objectDetail>
+      <numberOfElements>3</numberOfElements>
+      <dataType>complex</dataType>
+      <dataSize>4</dataSize>
+      <unit>unit</unit>
+      <complex>
+        <value type="real">1</value>
+        <value type="real">0</value>
+      </complex>
+      <complex>
+        <value type="real">-0.5</value>
+        <value type="real">0.86625</value>
+      </complex>
+      <complex>
+        <value type="real">-0.5</value>
+        <value type="real">-0.86625</value>
+      </complex>
+    </object>
+  </group>
+</namelist>

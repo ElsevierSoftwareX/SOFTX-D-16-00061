@@ -1,0 +1,21 @@
+ &basicGr ! comment1
+ charObj1=2*,'cat',   ,3*,'feel','f',2* 'go', 'that''s', 
+ "this is an obj", "that's another obj", "this ""is"" valid",
+ nondelimObj  = NONDELIM nondelim 3 * catch22, 22Catch
+ !comment 2
+ charObj2 = '{}[]()^$.|*+?\-''abc"def!#%&=~@`;:<>',
+            '........!"#$%&-=^~\|@[{]};:+,.<>?',
+ realObj  = 1.3e5 -4.56 +1234.D-5 2 * -.Q1
+ complexObj  = ( 1.3e5 , -4.56 )     2 *(+1234.D-5,  -.Q1) , ( 1 , -5)
+ logicalObj = .true. , .True , 4*.FALSE. .Table .Flour tRue fAlsE
+ integerObj=1,2, 3*, 4, 5*2
+ &end !comment3
+ & nullGr1
+ !comment4
+ nullObj1= ! This is a comment.
+ & end
+ ! This is another comment....
+ &nullGr2 nullObj2=  /
+ &arrayGr
+ realAry(1,1:12,3) = 12 * 3e0, charAry(1,2)(4:8)= 'abcde', nilAry(:)=10*,
+ intAry(1,1:3,  5)=1,2,3 &End
